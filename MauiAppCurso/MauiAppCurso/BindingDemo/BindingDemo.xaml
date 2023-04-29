@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Models="clr-namespace:MauiAppCurso.BindingDemo"
+             x:Class="MauiAppCurso.BindingDemo.BindingDemo"
+             Title="Binding Demo">
+    <ContentPage.Resources>
+        <Models:Person x:Key="Person"
+                       Name="Hernando Valencia"
+                       Address="Calle 12D #45-23"
+                       Phone="3277965608"/>
+    </ContentPage.Resources>
+    
+    <VerticalStackLayout
+            VerticalOptions="Center" 
+            HorizontalOptions="Center">
+        <!--<Label 
+            x:Name="lblName"
+            FontSize="50"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Text="{Binding Name, Source={StaticResource Person}}" />-->
+        <!--<Label 
+            x:Name="lblName"
+            FontSize="50"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+             />-->
+        <Label 
+            FontSize="50"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Text="{Binding Name}" />
+        <Label 
+            FontSize="50"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Text="{Binding Phone}" />
+        <Label 
+            FontSize="50"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Text="{Binding Address}" />
+
+        <Button x:Name="btnOk"
+                Text="Bind"
+                Clicked="btnOk_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>

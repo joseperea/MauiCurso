@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppCurso.CommandsControlsDemo"
+             Title="Commands Controls Demo">
+    <ScrollView>
+        <VerticalStackLayout 
+                Spacing="10"
+                VerticalOptions="Center">
+            <Button 
+                x:Name="btnTest"
+                Text="Click Me"
+                Clicked="btnTest_Clicked"/>
+            <ImageButton 
+                Source="dotnet_bot.svg"
+                Clicked="btnTest_Clicked"/>
+            <Frame>
+                <VerticalStackLayout>
+                    <RadioButton
+                        CheckedChanged="RadioButton_CheckedChanged"
+                        GroupName="Genero"
+                        Content="Hombre"/>
+                    <RadioButton
+                        CheckedChanged="RadioButton_CheckedChanged"
+                        GroupName="Genero"
+                        Content="Mujer"/>
+                    <RadioButton
+                        CheckedChanged="RadioButton_CheckedChanged"
+                        GroupName="Genero"
+                        Content="No binario"/>
+                </VerticalStackLayout>
+            </Frame>
+            <Frame>
+                <VerticalStackLayout>
+                    <RadioButton
+                        CheckedChanged="RadioButton_CheckedChanged"
+                        GroupName="Equipo"
+                        Content="Na"/>
+                    <RadioButton
+                        CheckedChanged="RadioButton_CheckedChanged"
+                        GroupName="Equipo"
+                        Content="Dim"/>
+                </VerticalStackLayout>
+            </Frame>
+            <SwipeView>
+                <SwipeView.LeftItems>
+                    <SwipeItems>
+                        <SwipeItem
+                            Invoked="SwipeItem_Invoked"
+                            IconImageSource="dotnet_bot.svg"
+                            BackgroundColor="LightGreen"
+                            Text="Favorito">
+                            
+                        </SwipeItem>
+                        <SwipeItem
+                            Invoked="SwipeItem_Invoked"
+                            IconImageSource="dotnet_bot.svg"
+                            BackgroundColor="LightPink"
+                            Text="Delete">
+
+                        </SwipeItem>
+                    </SwipeItems>
+                </SwipeView.LeftItems>
+                <Grid
+                    HeightRequest="200"
+                    BackgroundColor="Silver">
+                        <Label Text="Swipe Rigth!"
+                           WidthRequest="300"
+                           FontSize="Title"
+                           HorizontalTextAlignment="Center"/>
+                </Grid>
+            </SwipeView>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

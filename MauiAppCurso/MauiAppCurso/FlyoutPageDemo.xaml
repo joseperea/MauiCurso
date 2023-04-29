@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppCurso.FlyoutPageDemo"
+             Title="FlyoutPageDemo">
+    <FlyoutPage.Flyout>
+        <ContentPage Title="My App" BackgroundColor="Aqua">
+            <VerticalStackLayout 
+            Spacing="5"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center">
+                <Label 
+            Text="Hola From Flout!" 
+            FontSize="Large"/>
+            </VerticalStackLayout>
+
+        </ContentPage>
+    </FlyoutPage.Flyout>
+    <FlyoutPage.Detail>
+        <ContentPage BackgroundColor="Yellow">
+            <VerticalStackLayout 
+            Spacing="5"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center">
+                <Label 
+            Text="Hola From Detail!" 
+            FontSize="Large"/>
+            </VerticalStackLayout>
+        </ContentPage>
+    </FlyoutPage.Detail>
+</FlyoutPage>

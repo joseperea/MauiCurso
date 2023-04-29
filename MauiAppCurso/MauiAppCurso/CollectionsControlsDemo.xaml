@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppCurso.CollectionsControlsDemo"
+             Title="Collections Controls Demo">
+    <VerticalStackLayout>
+        <!--<CarouselView>
+            <CarouselView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Colombia</x:String>
+                    <x:String>Perú</x:String>
+                    <x:String>Ecuador</x:String>
+                    <x:String>Bolivia</x:String>
+                    <x:String>Venezuela</x:String>
+                    <x:String>Panamá</x:String>
+                    <x:String>Argentina</x:String>
+                    <x:String>Brasil</x:String>
+                </x:Array>
+            </CarouselView.ItemsSource>
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <VerticalStackLayout
+                        Margin="10">
+                        <Frame 
+                            Margin="10"
+                            BackgroundColor="Silver"
+                            HeightRequest="80"
+                            WidthRequest="200"
+                            Padding="10"
+                            VerticalOptions="Center">
+                            <Label Text="{Binding .}"
+                                   TextColor="Purple"
+                                   FontAttributes="Bold"
+                                   FontSize="20"/>
+                        </Frame>
+                    </VerticalStackLayout>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>-->
+        <!--<ListView HasUnevenRows="True"
+                  SeparatorVisibility="None">
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Colombia</x:String>
+                    <x:String>Perú</x:String>
+                    <x:String>Ecuador</x:String>
+                    <x:String>Bolivia</x:String>
+                    <x:String>Venezuela</x:String>
+                    <x:String>Panamá</x:String>
+                    <x:String>Argentina</x:String>
+                    <x:String>Brasil</x:String>
+                </x:Array>
+            </ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <VerticalStackLayout
+                            Margin="10">
+                                <Frame 
+                                Margin="10"
+                                BackgroundColor="Silver"
+                                HeightRequest="80"
+                                WidthRequest="200"
+                                Padding="10"
+                                VerticalOptions="Center">
+                                    <Label Text="{Binding .}"
+                                       TextColor="Purple"
+                                       FontAttributes="Bold"
+                                       FontSize="20"/>
+                                </Frame>
+                        </VerticalStackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>-->
+        <Picker>
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Colombia</x:String>
+                    <x:String>Perú</x:String>
+                    <x:String>Ecuador</x:String>
+                    <x:String>Bolivia</x:String>
+                    <x:String>Venezuela</x:String>
+                    <x:String>Panamá</x:String>
+                    <x:String>Argentina</x:String>
+                    <x:String>Brasil</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+    </VerticalStackLayout>
+</ContentPage>
