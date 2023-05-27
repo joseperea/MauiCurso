@@ -1,4 +1,6 @@
-﻿namespace MauiAppCurso;
+﻿using MauiAppCurso.MVVM.View;
+
+namespace MauiAppCurso;
 
 public partial class App : Application
 {
@@ -12,6 +14,6 @@ public partial class App : Application
         //      navPage.Title = "Demo Curso";
         //      MainPage = navPage;
 
-        MainPage = new NavigationPage(new BindingDemo.BindingDemo());
+        MainPage = new NavigationPage(new StyleDemoView());
     }
 }
